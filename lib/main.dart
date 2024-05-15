@@ -1,3 +1,18 @@
+/*
+Upload Project ke Github :
+
+Untuk pertama kali :
+git add .
+git commit -m "Upload UTS"
+git branch -M main
+git remote add origin https://github.com/adeputraprimasuhendri/testtttt.git
+git push -u origin main
+
+Untuk selanjutnya :
+git add .
+git commit -m "Upload UTS"
+git push
+*/
 import 'package:flutter/material.dart';
 
 void main() {
@@ -60,8 +75,14 @@ class _UTSState extends State<UTS> {
         title: const Text('Shoes'),
         centerTitle: false,
         actions: [
-          Image.network(
-              "https://www.freepnglogos.com/uploads/shoes-png/shoes-wasatch-running-3.png"),
+          Padding(
+            padding: const EdgeInsets.only(right: 28.0),
+            child: CircleAvatar(
+              child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset("images/sepatu-1.jpg")),
+            ),
+          ),
         ],
       ),
       body: Padding(
